@@ -1,0 +1,124 @@
+html,
+body {
+  height: 100%;
+  overflow: hidden;
+  width: 100%;
+}
+
+html {
+  display: table;
+  margin: auto;
+}
+
+body {
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.buttons {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  -ms-flex-align: center;
+  gap: 20px;
+}
+
+.yes {
+  cursor: pointer;
+  font-family: Cascadia Code;
+  font-size: 24px;
+  padding: 10px 35px;
+  background-color: #c6dcba;
+  color: black;
+  border: 2px solid #d7e4c0;
+  border-radius: 4px;
+  transition-duration: 1s;
+}
+
+.no {
+  width: 3.5vw;
+  height: 5vh;
+  cursor: pointer;
+  font-family: Cascadia Code;
+  transition: all 0.3s ease;
+  padding: 10px 35px;
+  font-size: 16px;
+  background-color: #3498db;
+  border: #3498db solid;
+}
+
+.no:hover {
+  transform: translateY(-100px); /* Move button up by 50px on hover */
+}
+
+.title {
+  font-family: monospace;
+  font-size: 50px;
+}
+
+.css-selector {
+  background: linear-gradient(270deg, #f5eee6, #fff8e3, #f3d7ca, #e6a4b4);
+  background-size: 800% 800%;
+  width: 100vw;
+  height: 100vh;
+  align-content: center;
+  justify-content: center;
+  justify-items: center;
+  align-items: center;
+  display: flex;
+  -ms-flex-align: center;
+  gap: 10px;
+  flex-wrap: wrap;
+  flex-direction: column;
+  z-index: 0;
+
+  -webkit-animation: BackgroundAnimation 8s ease infinite;
+  -moz-animation: BackgroundAnimation 8s ease infinite;
+  -o-animation: BackgroundAnimation 8s ease infinite;
+  animation: BackgroundAnimation 8s ease infinite;
+}
+
+@-webkit-keyframes BackgroundAnimation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+@-moz-keyframes BackgroundAnimation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+@-o-keyframes BackgroundAnimation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+@keyframes BackgroundAnimation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
